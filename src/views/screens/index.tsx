@@ -1,7 +1,7 @@
 import Splash from './Splash';
-
+import LandingPage from './LandingPage';
 const useScreens = () => {
-  return { Splash };
+  return { LandingPage, Splash };
 };
 
 export default useScreens;
