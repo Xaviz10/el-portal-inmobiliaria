@@ -4,10 +4,11 @@ import useLayouts from '../../layouts';
 
 const LandingPage = () => {
   const { PrimaryLayout } = useLayouts();
-  const { HomeSection } = useComponents();
+  const { HomeSection, LearnMoreSection } = useComponents();
   return (
     <PrimaryLayout>
       <HomeSection />
+      <LearnMoreSection />
     </PrimaryLayout>
   );
 };
