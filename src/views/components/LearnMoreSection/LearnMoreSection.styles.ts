@@ -2,7 +2,7 @@ import styled from 'styled-components';
 import tw from 'twin.macro';
 
 export const StyledLearnMoreSection = styled.section`
-  ${tw`relative h-[34rem] mx-auto py-28 px-40 flex gap-x-12 justify-center items-center`}
+  ${tw`relative h-[34rem] mx-auto pt-28 px-40 flex gap-x-12 justify-center items-center`}
   max-width: calc(1440px - 10rem);
 `;
 

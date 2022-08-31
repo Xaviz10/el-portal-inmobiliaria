@@ -2,7 +2,7 @@ import tw from 'twin.macro';
 import styled from '@emotion/styled';
 
 interface ButtonProps {
-  color?: 'primary' | 'secondary';
+  color?: 'primary' | 'secondary' | 'white';
   variant?: 'contained' | 'outlined';
 }
 
@@ -22,6 +22,14 @@ const Button = styled.button<ButtonProps>`
                 leading-6
                 text-white
                 `;
+      case 'white':
+        return tw`
+                bg-white
+                font-bold
+                text-base
+                leading-6
+                text-secondary
+                `;
       default:
         return tw`bg-white
                 font-bold
@@ -30,7 +38,7 @@ const Button = styled.button<ButtonProps>`
                 text-primary`;
     }
   }}
-  ${({ variant, color }) =>
+  ${({ variant }) =>
     variant === 'outlined' && tw`bg-white border-2 border-primary`}
   ${({ variant, color }) =>
     variant === 'outlined' &&
