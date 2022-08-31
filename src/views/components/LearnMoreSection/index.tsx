@@ -1,28 +1,28 @@
 import { forwardRef } from 'react';
 import {
-  StyledHomeSection,
+  StyledLearnMoreSection,
   StyledArticleInfo,
   StyledSectionTitle,
   StyledPhraseInfo,
   StyledHomeImage,
-} from './HomeSection.styles';
+} from './LearnMoreSection.styles';
 import Button from '../Button';
 
-const HomeSection = forwardRef<HTMLElement>((props, ref) => (
-  <StyledHomeSection id={'home'} ref={ref} {...props}>
+const LearnMoreSection = forwardRef<HTMLElement>((props, ref) => (
+  <StyledLearnMoreSection id={'home'} ref={ref} {...props}>
+    <StyledHomeImage />
+    <StyledHomeImage />
     <StyledArticleInfo>
       <StyledSectionTitle>
         Find your custom matched commercial real estate space.
       </StyledSectionTitle>
-
       <StyledPhraseInfo>
         In oculis quidem exercitus quid ex ea consequatur? autem vel eum fugiat,
         quo pertineant ero tibique
       </StyledPhraseInfo>
       <Button color="secondary">Contactanos</Button>
     </StyledArticleInfo>
-    <StyledHomeImage />
-  </StyledHomeSection>
+  </StyledLearnMoreSection>
 ));
 
-export default HomeSection;
+export default LearnMoreSection;
