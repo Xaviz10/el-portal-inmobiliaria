@@ -5,10 +5,10 @@ import useViews from '../../views';
 const PublicRouting = () => {
   // Views
   const { useScreens } = useViews();
-  const { Splash } = useScreens();
+  const { LandingPage } = useScreens();
   return (
     <Routes>
-      <Route path="/" element={<Splash />} />
+      <Route path="/" element={<LandingPage />} />
     </Routes>
   );
 };

@@ -1,5 +1,9 @@
+import PrimaryLayout from './PrimaryLayout';
+
 const useLayouts = () => {
-  return {};
+  return {
+    PrimaryLayout,
+  };
 };
 
 export default useLayouts;
